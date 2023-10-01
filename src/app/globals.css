@@ -2,26 +2,192 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  overflow: scroll;
+  background-color: aliceblue;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.home{
+  height: auto;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.p-inputtext {
+  width: 100%;
+  position: relative;
+  padding: 7px;
+  border-radius: 5px;
+  border: 2px solid #d7d7d7;
+  outline: #322972;
+}
+.search.p-inputtext {
+  min-width: 300px;
+}
+
+.p-inputtext:hover,
+.p-inputtext:active,
+.p-inputtext::selection,
+.p-inputtext::after {
+  outline: #322972;
+  border: 2px solid #322972;
+}
+.p-dialog{
+  background-color: white;
+}
+
+.p-menu-list{
+  background-color: white;
+  border-radius: 5px;
+}
+.p-menuitem{
+  padding: 5px 15px;
+}
+
+.header .main_header .p-menubar .p-menubar-root-list .p-menuitem > .menu_item_wrap span:hover {
+    color: #322972;
+    font-size: 16px !important;
+}
+
+.hero-carousel{
+  width: 36rem;
+}
+.p-carousel-container [type='button']{
+  width: 30px;
+    background: #ed701e;
+    border-radius: 50%;
+    height: 30px;
+    position: relative;
+}
+.hero-carousel div {
+  object-fit: cover;
+}
+.hero-carousel div img {
+  width: 100%;
+}
+.hero-carousel .hero-carousel-data {
+  position: relative;
+  color: white;
+  top: -125px;
+  height: 0;
+}
+.hero-carousel .hero-carousel-data h2 {
+font-size: 30px;
+}
+.hero-carousel .hero-carousel-data h4 {
+font-size: 24px;
+padding-top: 5px;
+}
+.hero-carousel .hero-carousel-data .p-button,.btn-primary {
+color: white;
+padding: 10px 15px;
+background-color: #322972;
+border-radius: 5px;
+}
+.deals-offers-container{
+  background-color: white;
+}
+.deals-offers:first-child img{
+  height: 100%;
+}
+.deals-offers img{
+  border: 1px solid #d7d7d7;
+  background-color: white;
+}
+.deals-offers div div{
+z-index: 10;
+position: relative;
+top: -80px;
+text-align: center;
+color: white;
+font-size: 24px;
+font-weight: 500;
+}
+.deals-offers img:hover{
+  background-color: white;
+transform: scale(1.25);
+}
+/* .deals-offers:hover{
+/* overflow: hidden; */
+/* }  */
+.deals-offers-container{
+  border: 1px solid #d7d7d7;
+}
+
+.recommand-products{
+  width:100%;
+  padding: 20px;
+}
+.recommand-products div .p-card{
+  background-color: white;
+  border-radius: 5px;
+  height: 250px;
+  border: 1px solid #d7d7d7;
+}
+.recommand-products div .p-card .p-card-header img{
+  height: 170px;
+}
+.recommand-products div .p-card .p-card-body .p-card-title{
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px;
+}
+.recommand-products div .p-card .p-card-body .p-card-subtitle{
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: darkgray;
+}
+
+footer{
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+}
+footer .f-title p,footer .f-title i{
+  color: #322972;
+  font-size: 30px;
+  font-weight: 700;
+  display: inline;
+  margin-right: 10px;
+}
+footer .f-title{
+  margin-bottom: 20px;
+}
+footer .f-subtitle p{
+  color: darkgray;
+  font-size: 16px;
+  line-height: 26px;
+}
+footer .f-icons{
+  margin-top: 20px;
+  color: #322972;
+  font-size: 22px;
+}
+footer .f-icons i{
+  padding-right: 20px;
+}
+footer .f-links .grid div ul li:first-child{
+line-height: 28px;
+font-size: 18px;
+margin-bottom: 20px;
+color: black;
+}
+footer .f-links .grid div ul li{
+line-height: 28px;
+font-size: 16px;
+color: darkgray;
+}
+footer .f-links .grid div ul li i{
+  color: #322972;
+  margin-right: 10px;
+}
+footer .f-copy{
+  margin-top: 30px;
+  padding: 15px;
+  border-top: 1px solid #d7d7d7;
+}
+
+.signin-container form{
+  height: 400px;
+  
 }
